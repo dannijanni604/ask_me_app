@@ -1,7 +1,8 @@
+import 'package:ask_me/core/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'views/views.dart';
+import 'routes/app_routes.dart';
 
 void main() {
   runApp(const AskMe());
@@ -17,9 +18,11 @@ class AskMe extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return const GetMaterialApp(
+        return GetMaterialApp(
+          theme: theme,
           debugShowCheckedModeBanner: false,
-          home: HomeView(),
+          initialRoute: AppPages.initial,
+          getPages: AppPages.routes,
         );
       },
     );
