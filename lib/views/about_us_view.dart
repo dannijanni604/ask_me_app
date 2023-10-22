@@ -31,7 +31,9 @@ class AboutUsView extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      const SizedBox()
+                      SizedBox(
+                        width: 60.w,
+                      )
                     ],
                   ),
                   SizedBox(

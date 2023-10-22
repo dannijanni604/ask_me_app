@@ -27,7 +27,7 @@ class HomeView extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                "ASK ME",
+                "Lexigrade",
                 style: TextStyle(color: Colors.white, fontSize: 26.sp),
               ),
             ),

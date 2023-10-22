@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-const String openAiKey = "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";
+const String openAiKey = "";
 
 const String baseURL = "https://api.openai.com/v1";
 
@@ -20,8 +20,7 @@ class ChatGptApi {
       http.Response response =
           await http.post(Uri.parse("https://api.openai.com/v1/completions"),
               headers: {
-                "Authorization":
-                    "Bearer ${"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"}",
+                "Authorization": "Bearer $openAiKey",
                 'Content-Type': 'application/json',
               },
               body: jsonEncode({

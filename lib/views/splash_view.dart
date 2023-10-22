@@ -15,7 +15,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 2), () => Get.toNamed(Routes.home));
+    Timer(const Duration(seconds: 2), () => Get.offAndToNamed(Routes.home));
   }
 
   @override

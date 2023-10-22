@@ -46,7 +46,7 @@ class ImageGeneratorView extends GetView<ChatImageController> {
             onTap: () {
               controller
                   .getGenerateImages(controller.searchTextController.text);
-              controller.clearTextField();
+              // controller.clearTextField();
             },
           ),
           SizedBox(height: 12.h),
